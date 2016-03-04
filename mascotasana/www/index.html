@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mascotasana App</title>
+        <link rel="stylesheet" href="css/1ra.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/jquery_mobile_structure.css" />
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery_mobile.js"></script>
+
+    </head>
+    
+    <body class="ui-mobile-viewport-a">
+    
+
+        <div class="ui-content ui-page-theme-a" role="main">
+            <div data-theme="a" data-form="ui-body-a" class="ui-body ui-body-a ui-corner-all" data-vertical-centred>
+                <p align="center">
+                    <img src="img/logo.png" width="50%" class="ui-corner-all img-logo"><br/><br/>
+                   
+                </p>
+
+ 
+                <input type="text" data-theme="a" placeholder="Email" class="input" data-form="ui-body-a">
+                <input type="text" data-theme="a" placeholder="Contraseña" class="input" data-form="ui-body-a">
+
+                <div align="center">
+                    <a href="mascota.html" class="ui-btn ui-corner-all">Iniciar Sesión</a>
+                </div>
+
+
+
+                <p align="center">
+                    ¿No tienes cuenta?
+                    <a href="#" onclick="window.location.replace('registro.html');"> Regístrate</a>
+                </p>
+
+            </div>
+             <p align="center">
+                    <a href="olvido_clave.html"> ¿No recuerdas la contraseña?</a>
+                </p>
+        </div>
+        
+        <script type="text/javascript">
+            //Url para enlace al servidor remoto
+            var desarrollo = "on";
+            if(desarrollo == "on"){
+                localStorage.url = "http://stoadsoft.ddns.net:3388/mascotasana_php/valida.php";
+            }else{
+                localStorage.url = "http://sistemasts.net/sml_agenda_php/valida.php";
+            }
+
+            app.initialize();    
+        </script>
+        <script type="text/javascript">
+        	
+        	applyVerticalCentering = function() {
+    $(this).on('pagebeforeshow',function(e,data){
+        $('[data-vertical-centred]').hide();
+    });
+    
+    $(this).on('pageshow resize',function(e,data){    
+        $('[data-vertical-centred]').each(function(index){
+            var _this = $(this);
+            _this.css('margin-top',
+                      ($(window).height() -
+                       $('header:visible').height() -
+                       $('footer:visible').height() -
+                       _this.outerHeight())/2);
+            _this.show();
+        });
+    });
+}();
+
+        </script>
+    </body>
+</html>
+

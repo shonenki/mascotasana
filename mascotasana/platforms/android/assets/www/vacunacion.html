@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jQuery Mobile: Theme Download</title>
+        <link rel="stylesheet" href="css/mascotasana.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/jquery_mobile_structure.css" />
+
+        <!-- JS -->
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery_mobile.js"></script>
+        
+        <!-- CSS-->
+        <style>
+            th {
+                border-bottom: 1px solid #d6d6d6;
+            }
+
+            tr:nth-child(even) {
+                background: #e9e9e9;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="ui-header ui-bar-a" data-role="header" role="banner">
+            <h1 class="ui-title" tabindex="0" role="heading" aria-level="1">Vacunación</h1>
+            <a class="ui-btn-right ui-btn-corner-all ui-btn ui-icon-power ui-btn-icon-notext ui-shadow" data-form="ui-icon" data-role="button" role="button" onclick='navigator.app.exitApp();'> </a>
+            <div data-role="navbar" align="center">
+                <ul>
+                    <li><a href="mascota.html"><img src="img/mascota.png" width="80"/><br/><br/></a></li>
+                    <li><a href="vacunacion.html" style="background-color: #FFA31B;"><img src="img/vacuna.png" width="80"/><br/><br/></a></li>
+                    <li><a href="#"><img src="img/salud.png" width="80"/><br/><br/></a></li>
+                    <li><a href="#"><img src="img/alimento.png" width="80"/><br/><br/></a></li>
+<!--                    <li><a href="#"><img src="img/producto.png" width="80"/></a></li>-->
+                </ul>
+            </div>
+        </div>
+
+        <div align="center">
+            <button style="background-color:  #5CD2B3; color: #000" data-icon="star" data-theme="a" data-form="ui-btn-up-a" class=" ui-btn ui-btn-a ui-icon-star ui-btn-icon-left ui-shadow ui-corner-all">Mi Almacen</button>
+        </div>
+        
+        <div class="ui-content ui-page-theme-a" role="main">
+            <div data-theme="a" data-form="ui-body-a" class="ui-body ui-body-a ui-corner-all">
+                <div align="center">
+                    <h3><b>Perfil de Vacunación: June</b></h3>
+                </div>
+                <br/><br/>
+                <div>
+                    <table data-role="table" class="ui-responsive" border="1">
+                        <thead>
+                            <tr>
+                                <th>Tipo</th>
+                                <th>Fecha</th>
+                                <th>Recordatorio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Antirrábica</td>
+                                <td>14-05-2015</td>
+                                <td>
+                                    <img src="img/si.png" width="24">
+                                    <img src="img/no.png" width="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Séxtuple</td>
+                                <td>20-12-2014</td>
+                                <td>
+                                    <img src="img/si.png" width="24">
+                                    <img src="img/no.png" width="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Moquillo</td>
+                                <td>15-09-2015</td>
+                                <td>
+                                    <img src="img/si.png" width="24">
+                                    <img src="img/no.png" width="24">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div align="center">
+                        <button class="ui-btn ui-btn-inline ui-shadow ui-icon-plus ui-btn-icon-left">Agregar Vacuna</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
