@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mascotasana App</title>
+        <link rel="stylesheet" href="css/1ra.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/jquery_mobile_structure.css" />
+    </head>
+    
+    <body onload='completa();' class="ui-overlay-b">
+
+        <div class="ui-header ui-bar-b" data-role="header"  role="banner">
+               <a   onclick="window.location.replace('index.html');" class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-power ui-btn-icon-notext ui-shadow" data-form="ui-icon" data-role="button" role="button"  r> </a>
+            <h1 class="ui-title" tabindex="0" role="heading" aria-level="1">Registro</h1>
+     
+        </div>
+
+
+            <div data-theme="b" data-form="ui-body-b" class="ui-body ui-body-b ui-corner-all">
+
+            <input type="file" data-theme="a" placeholder="imagen" class="input" data-form="ui-body-a">
+                
+                <input type="text" data-theme="a" placeholder="Nombre" name='nombre' id='nombre' class="input" data-form="ui-body-a">
+                
+                <input type="text" data-theme="a" placeholder="Apellido" name='apellido' id='apellido' class="input" data-form="ui-body-a">
+                
+                <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div data-role="fieldcontain" class="ui-field-contain">
+                            <div class="ui-select">
+                                <select name="pais" id="pais" data-native-menu="true" data-theme="b" data-form="ui-btn-up-b" tabindex="-1">
+                                    <option value="">País</option><option value="1">Afghanistan</option><option value="2">Albania</option><option value="3">Algeria</option><option value="4">Andorra</option><option value="5">Angola</option><option value="6">Antarctica</option><option value="7">Antigua and Barbuda</option><option value="8">Argentina</option><option value="9">Armenia</option><option value="10">Australia</option><option value="11">Austria</option><option value="12">Bahamas</option><option value="13">Bangladesh</option><option value="14">Barbados</option><option value="15">Belgium</option><option value="16">Bermuda</option><option value="17">Bolivia</option><option value="18">Bosnia and Herzegowina</option><option value="19">Botswana</option><option value="20">Brasil</option><option value="21">Bulgaria</option><option value="22">Burkina Faso</option><option value="23">Cambodia</option><option value="24">Cameroon</option><option value="25">Canada</option><option value="26">Chile</option><option value="27">China</option><option value="28">Colombia</option><option value="29">Congo</option><option value="30">Costa Rica</option><option value="31">Croatia (Hrvatska)</option><option value="32">Cuba</option><option value="33">Cyprus</option><option value="34">Czech Republic</option><option value="35">Denmark</option><option value="37">Ecuador</option><option value="38">Egypt</option><option value="39">El Salvador</option><option value="102">España</option><option value="112">Estados Unidos</option><option value="41">Faroe Islands</option><option value="42">Fiji</option><option value="43">Finland</option><option value="44">France</option><option value="45">Georgia</option><option value="46">Germany</option><option value="47">Ghana</option><option value="48">Greece</option><option value="49">Greenland</option><option value="50">Guam</option><option value="51">Guatemala</option><option value="52">Guinea</option><option value="53">Haiti</option><option value="54">Honduras</option><option value="55">Hong Kong</option><option value="56">Hungary</option><option value="57">Iceland</option><option value="58">India</option><option value="59">Indonesia</option><option value="60">Iran</option><option value="61">Iraq</option><option value="62">Ireland</option><option value="40">Islas Malvinas</option><option value="63">Israel</option><option value="64">Italy</option><option value="65">Jamaica</option><option value="66">Japan</option><option value="67">Jordan</option><option value="68">Korea</option><option value="69">Kuwait</option><option value="70">Latvia</option><option value="71">Lebanon</option><option value="72">Liechtenstein</option><option value="73">Lithuania</option><option value="74">Luxembourg</option><option value="75">Malaysia</option><option value="76">Maldives</option><option value="77">Mexico</option><option value="78">Monaco</option><option value="79">Mongolia</option><option value="80">Morocco</option><option value="81">Nepal</option><option value="82">Netherlands</option><option value="83">New Zealand</option><option value="84">Nicaragua</option><option value="85">Niger</option><option value="86">Nigeria</option><option value="87">Norway</option><option value="88">Panamá</option><option value="89">Paraguay</option><option value="90">Perú</option><option value="91">Philippines</option><option value="92">Poland</option><option value="93">Portugal</option><option value="94">Puerto Rico</option><option value="95">Qatar</option><option value="36">República Dominicana</option><option value="96">Romania</option><option value="97">Russian Federation</option><option value="98">Saudi Arabia</option><option value="99">Senegal</option><option value="100">Singapore</option><option value="101">South Africa</option><option value="103">Sweden</option><option value="104">Switzerland</option><option value="105">Taiwan</option><option value="106">Thailand</option><option value="107">Turkey</option><option value="108">Uganda</option><option value="109">Ukraine</option><option value="110">United Arab Emirates</option><option value="111">United Kingdom</option><option value="113">Uruguay</option><option value="114">Venezuela</option><option value="115">Virgin Islands</option><option value="116">Yemen</option><option value="117">Yugoslavia</option><option value="118">Zimbabwe</option>                        
+                                </select>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="ui-block-b">
+                        <div data-role="fieldcontain" class="ui-field-contain">
+                            <div class="ui-select">
+                                <select name="sexo" id="sexo" data-native-menu="true" data-theme="b" data-form="ui-btn-up-b" tabindex="-1">
+                                    <option value="">Sexo</option><option value="male">Masculino</option><option value="famale">Femenino</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>  
+
+
+
+                </fieldset>
+                
+                <input type="text" data-theme="a" placeholder="E-mail" class="input" data-form="ui-body-a">
+
+                <input type="text" data-theme="a" placeholder="Confirma tu E-mail" class="input" data-form="ui-body-a">
+
+                <input type="text" data-theme="a" placeholder="Contraseña" class="input" data-form="ui-body-a">
+
+                <input type="text" data-theme="a" placeholder="Confirma tu Contraseña" class="input" data-form="ui-body-a">
+
+                <div align="center">
+                    <a href="mascota.html" class="ui-btn ui-corner-all ">Crear Cuenta</a>
+                </div>
+
+                <p align="center">
+                    Al crear una cuenta, estas aceptando los<br>
+                    <a  href="#popupBasic" data-rel="dialog" data-transition="pop">Terminos del Servicio</a>
+                </p>
+
+
+
+            </div>
+
+    
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery_mobile.js"></script>
+        <script type="text/javascript" src="js/jquery.blockUI.js"></script>
+        
+        <script>
+        function completa(){
+            //Valida que no exista el usuario y lo inserta
+            $.blockUI({ message: '<img src="img/spinner.gif" />' });
+
+            //Llama al servidor y valida
+            var dataString="accion=busca_paises";
+            $.ajax({
+                type: "POST",
+                url:localStorage.url,
+                data: dataString,
+                crossDomain: true,
+                cache: false,
+                beforeSend: function(){ },
+                success: function(data){
+                    if(data==""){
+                        alert("Ocurrió un error, por favor inténte cargar el formulario de nuevo");
+                    }else{
+                        $('<select name="pais" id="pais" data-native-menu="false" data-theme="a" data-form="ui-btn-up-a" tabindex="-1">\n\
+                            '+data+'\
+                        </select>\n\
+                        <div style="display: none;" id="select-choice-a-listbox-placeholder"></div>').appendTo($('#div_pais'));
+                        
+                        
+                        
+                    }
+                    //Desbloquea pantalla
+                    $.unblockUI();
+                }
+            });
+        }
+        </script>
+
+    </body>
+</html>
